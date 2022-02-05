@@ -16,11 +16,11 @@ public class App {
      * create a simple Hello World web app. It maps the lambda function to the
      * /hello relative URL.
      */
-    public static void main(String[] args) {
-        port(getPort());
-        get("/inputdata", (req, res) -> inputDataPage(req, res));
-        get("/results", (req, res) -> resultsPage(req, res));
-    }
+//    public static void main(String[] args) {
+//        port(getPort());
+//        get("/inputdata", (req, res) -> inputDataPage(req, res));
+//        get("/results", (req, res) -> resultsPage(req, res));
+//    }
 
     private static String inputDataPage(Request req, Response res) {
         String pageContent

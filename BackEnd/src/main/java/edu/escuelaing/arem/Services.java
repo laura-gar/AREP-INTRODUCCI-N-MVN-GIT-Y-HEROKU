@@ -2,19 +2,27 @@ package edu.escuelaing.arem;
 
 
 public class Services {
-    public double celsiusToFahrenheit(double celsius){
-        double res = (celsius * 9/5) + 32;
+
+    /**
+     * Convierte los grados Celsius a Fahrenheit.
+     * @param celsius, grados Celsius a convertir.
+     * @return Grados en Fahrenheit.
+     */
+    public  double celsiusToFahrenheit(double celsius){
+        double res = Math.round(((celsius * 9/5) + 32) * 100.0) / 100.0;
         return res;
     }
 
-    public double fahrenheitToCelsius(double fahrenheit){
-        double res = (fahrenheit - 32) * 5/9;
+    /**
+     * Convierte los grados Fahrenheit a Celsius.
+     * @param fahrenheit, grados Fahrenheit a convertir.
+     * @return Grados en Celsius.
+     */
+    public  double fahrenheitToCelsius(double fahrenheit){
+        double res = Math.round(((fahrenheit - 32) * 5/9) * 100.0) / 100.0;
         return res;
     }
 
-    public void main(String[] args) {
-        System.out.println(celsiusToFahrenheit(10));
-        System.out.println(fahrenheitToCelsius(71.6));
-    }
+
 
 }
