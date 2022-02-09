@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="styles/main.css">
     <title>Calculadora de Conversión</title>
 </head>
 <body>
@@ -16,8 +16,8 @@
             </h1>
         </header>
         <br></br>
-        <section1>
-            <form accept-charset="UTF-8" action="action_page.php" autocomplete="off" method="GET" target="_blank">
+        <section>
+            <form>
                 <h2>
                     Celsius a Fahrenheit
                 </h2>
@@ -26,14 +26,14 @@
                 <p>
                     Fahrenheit
                 </p>
-                <p id="ResultFahrenheit"></p>
+                <p id="fahrenheitResult"></p>
 
-                <button type="button" value="Submit">Convertir</button>
+                <button id="celsiusButton" type="button" value="Submit" >Convertir</button>
             </form>
-        </section1>
+        </section>
         <br></br>
-        <section2>
-            <form accept-charset="UTF-8" action="action_page.php" autocomplete="off" method="GET" target="_blank">
+        <section>
+            <form>
                 <h2>
                     Fahrenheit a Celsius
                 </h2>
@@ -45,12 +45,13 @@
                 </p>
 
 
-                <p id="ResultCelsius"></p>
+                <p id="celsiusResult"></p>
                 <p></p>
-                <button type="button" value="Submit">Convertir</button>
+                <button id="fahrenheitButton" type="button" value="Submit">Convertir</button>
 
             </form>
-        </section2>
+        </section>
     </main>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@ public class Services {
      * @param celsius, grados Celsius a convertir.
      * @return Grados en Fahrenheit.
      */
-    public  double celsiusToFahrenheit(double celsius){
+    public double celsiusToFahrenheit(double celsius){
         double res = Math.round(((celsius * 9/5) + 32) * 100.0) / 100.0;
         return res;
     }
